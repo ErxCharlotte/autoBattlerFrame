@@ -17,10 +17,4 @@ public interface Chess {
     private int positionY;
     private int level;
     private Status status;
-
-
-
-
-
-
 }
