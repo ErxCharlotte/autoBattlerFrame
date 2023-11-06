@@ -3,10 +3,25 @@ package project;/*
  */
 
 
+import project.Board.Board;
+import project.Player.Player;
+
 /** The JavaFX application */
 public class App{
 
     public static void main(String[] args) {
         System.out.println("111");
+
+        Board board = new Board();
+        Player player1 = new Player();
+        Player player2 = new Player();
+
+        player1.setChessPosition(1,1,1);
+
+        int[][]emptyEnemyBoard = new int[8][8];
+
+
+        board.setBoard(player1.getChessPositions(), emptyEnemyBoard);
+        board.draw();
     }
 }
